@@ -7,33 +7,47 @@ package algorithms;
 import javax.swing.JOptionPane;
 
 public class GuessingPi {
+
 	// 1. Make a main method and make sure your program can run
+	public static void main(String[] args) {
+		String pi = "3.141592653589793238462643383";
 
-		// 2. Make a String variable to hold the value of Pi.
-		//    Get the first few digits from http://www.piday.org/million/.
+		System.out.println(pi.substring(0, 3));
+		for (int i = 0; i < pi.length(); i++) {
+			String userGuess = JOptionPane.showInputDialog("Next digit of pi?");
+			if (userGuess.charAt(0)==pi.charAt(i)) {
+				JOptionPane.showMessageDialog(null, "Correct!");
+			} else {
+				JOptionPane.showMessageDialog(null, "Wrong!");
+				break;
+			}
 
-		// 3. Print out the first 3 digits of Pi to the console.
-		//    The first value is "pi.charAt(0)", the second is "pi.charAt(1)", etc.
-		//    Run your program to see how this works.
+		}
 
-		// 9. If you want to give the user more than one chance to guess,
-		//    put a for loop around steps 4-8.
+	}
+	// 2. Make a String variable to hold the value of Pi.
+	// Get the first few digits from http://www.piday.org/million/.
 
-			// 4. Create a for loop that will step through each digit of pi (steps 5-8)
-			//    NOTE: The number of digits in your string will be
-			//       yourStringVariable.length()
+	// 3. Print out the first 3 digits of Pi to the console.
+	// The first value is "pi.charAt(0)", the second is "pi.charAt(1)", etc.
+	// Run your program to see how this works.
 
-				// 5. Ask the user for the NEXT digit of pi.
+	// 9. If you want to give the user more than one chance to guess,
+	// put a for loop around steps 4-8.
 
-				// 6. Compare the user's input to the next digit of your pi variable 
-				//    (look at step 3 for a clue).
-				//    HINT: use charAt(0) to get 1st char of user input String 
+	// 4. Create a for loop that will step through each digit of pi (steps 5-8)
+	// NOTE: The number of digits in your string will be
+	// yourStringVariable.length()
 
-					// 7. If they are correct, print out "correct".
+	// 5. Ask the user for the NEXT digit of pi.
 
-					// 8. If they are not, print out "incorrect" and tell them
-					//    to start over. Use 'break;' to break out of the loop.
+	// 6. Compare the user's input to the next digit of your pi variable
+	// (look at step 3 for a clue).
+	// HINT: use charAt(0) to get 1st char of user input String
+
+	// 7. If they are correct, print out "correct".
+
+	// 8. If they are not, print out "incorrect" and tell them
+	// to start over. Use 'break;' to break out of the loop.
 
 }
-
-
