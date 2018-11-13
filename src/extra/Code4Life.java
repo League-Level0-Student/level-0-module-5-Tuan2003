@@ -24,21 +24,22 @@ public class Code4Life {
 	// they're a Code Ninja
 
 	// 4. If it is more than 5, call the method below to play the Batman theme song.
-
+public static void main(String[] args) {
 String hoursCoding = JOptionPane.showInputDialog("How many hours of coding did you spend this week?");
-if(hoursCoding <= 2) {
+int hours = Integer.parseInt(hoursCoding);
+if(hours <= 2) {
 System.out.println("You should stop watching yotuube and write code instead");
-} else if(hoursCoding >= 3) {
+} else if(hours >= 3) {
 	System.out.println("You are a code ninja!");
-} else if(hoursCoding >=3) {
-	System.out.println("You are a code ninja!");
-} else if(hoursCoding >= 5) {
+} else if(hours >= 5) {
 	playBatmanTheme();
+}	
 }
+
 	
 	
 	
-	private static void playBatmanTheme[]() {
+	private static void playBatmanTheme() {
 		try {
 			AudioClip sound = JApplet.newAudioClip(Code4Life.class.getResource("batman.wav"));
 			sound.play();
@@ -47,6 +48,4 @@ System.out.println("You should stop watching yotuube and write code instead");
 			ex.printStackTrace();
 		}
 	}
-
-}
 }
