@@ -45,5 +45,43 @@ int year = 2003;
 			
 		}
 		
-}
+		for (int i = 0; i < 3; i++) {
+			
+			for (int j = 0; j < 3; j++) {
+				
+				System.out.print(i);
+				System.out.println(j);
+			}
+		}
+		for (int i = 0; i < 3; i++) {
+		
+			for (int j = 1; j < 4; j++) {
+				System.out.print((i+i+i+j)+(" "));
+			}
+					System.out.println("");		
+				
+			}
+	for(int i=0; i<10; i++) {
+			for (int j = 1; j < 11; j++) {
+				System.out.print((j+i*10) + " ");
+		}
+		System.out.println("");
+	
+	}
+for(int i=0; i<6; i++) {
+	
+	for (int j = 0; j <= 10; j++) {
+		
+		System.out.println("* ");
+		
+		if(i==1) {
+			System.out.println("");
+		}
+	}
+	System.out.println("");
+	
+	
+	
+		}
+	}
 }
