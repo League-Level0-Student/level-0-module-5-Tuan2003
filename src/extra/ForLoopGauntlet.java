@@ -68,17 +68,22 @@ int year = 2003;
 		System.out.println("");
 	
 	}
+	
 for(int i=0; i<6; i++) {
 	
-	for (int j = 0; j <= 10; j++) {
-		
-		System.out.println("* ");
-	
-	}
-	System.out.println("");
-	
-	
-	
-		}
-	}
+	for (int j = 0; j <= i; j++) {
+		System.out.print(" * ");			
 }
+System.out.println(" ");
+}
+
+
+
+for (int i = 0; i > -100; i--) {
+System.out.println(i+100);
+
+}
+}
+}
+
+
